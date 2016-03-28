@@ -1,6 +1,7 @@
 require 'formula'
+require 'etc'
 
-class Buildout < Formula
+class CinsBuildout < Formula
     homepage 'https://github.com/cins-china/cins-buildout'
     url 'https://github.com/cins-china/cins-buildout.git', :tag => '2.5.0'
     version '2.5.0'
@@ -8,6 +9,8 @@ class Buildout < Formula
     def install
      prefix.install "eggs"
      bin.install "bin/buildout"
+     $user_home = Etc.getpwuid.dir
+     `source #$user_home/.bashrc`
     end
 
 end
