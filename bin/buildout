@@ -8,8 +8,8 @@ base = os.path.dirname(base)
 
 import sys
 sys.path[0:0] = [
-    join(base, 'eggs/setuptools-20.3-py2.7.egg'),
-    join(base, 'eggs/zc.buildout-2.5.0-py2.7.egg'),
+    join(base, 'eggs/setuptools-20.10.1-py2.7.egg'),
+    join(base, 'eggs/zc.buildout-2.5.1-py2.7.egg'),
 ]
 
 import zc.buildout.buildout
