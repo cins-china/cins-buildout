@@ -1,7 +1,7 @@
 require 'formula'
 require 'etc'
 
-class CinsBuildout < Formula
+class Buildout < Formula
     homepage 'https://github.com/cins-china/cins-buildout'
     url 'https://github.com/cins-china/cins-buildout.git', :tag => '2.5.1'
     version '2.5.1'
